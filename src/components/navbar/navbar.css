@@ -13,14 +13,13 @@
 }
 
 .app__navbar-logo {
-  flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .app__navbar-logo img {
-  width: 150px;
-  height: 35px;
+  width: 120px;
+  height: 30px;
 }
 @media screen and (min-width: 2000px) {
   .app__navbar-logo img {
@@ -90,7 +89,7 @@
   right: 0;
   z-index: 5;
   padding: 1rem;
-  width: 50%;
+  width: 80%;
   height: 100vh;
   display: flex;
   justify-content: flex-end;

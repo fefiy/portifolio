@@ -3,9 +3,7 @@ import emailjs from '@emailjs/browser';
 import { images } from '../../constants';
 import AppWrap from ".././wrapper/AppWrap"
 import MotionWrap from ".././wrapper/MotionWrap"
-
-// import { client } from '../../client';
-import './Footer.scss';
+import './footer.scss';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
