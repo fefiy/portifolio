@@ -1,0 +1,155 @@
+@import "../../style.scss";
+
+.app__header {
+  @include themify($themes) {
+    // background: rgb(173, 230, 173);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    padding-top: 3rem;
+     margin-top: 6rem;
+    }
+
+    @include tablet{
+      flex-direction: column;
+      margin-top: 2%;
+    }
+
+    .app__header-info {
+      // background: #393333;
+      flex: 0.4;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+
+      .app__header-badge {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+
+        .badge-cmp,
+        .tag-cmp {
+          padding: 1rem 2rem;
+          background: var(--white-color);
+          border-radius: 15px;
+          flex-direction: row;
+          width: auto;
+
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .tag-cmp {
+          flex-direction: column;
+          margin-top: 3rem;
+
+          p {
+            width: 100%;
+            text-transform: uppercase;
+            text-align: right;
+          }
+        }
+
+        .btn{
+         
+          padding: 1rem 2rem;
+          border-radius: 10px;
+          border: none;
+          background-color: var(--secondary-color);
+          font-weight: 500;
+          color: var(--white-color);
+          outline: none;
+          margin: 2rem 0 0 0;
+          font-family: var(--font-base);
+      
+          transition: cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.3s all;
+          cursor: pointer;
+          &:hover {
+            transform: scale(0.9);
+            background-color: #2430af;
+          }
+        }
+      }
+
+     
+    }
+
+    .orbit {
+      // background: #ef8686;
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      ul {
+      background: #000;
+        
+        @for $i from 0 through 5{
+          li:nth-child(#{$i+1}){
+            transform: translate(
+              10rem * cos(60deg * $i),
+              10rem * sin(60deg * $i)
+            );
+          }
+        }
+        li {
+          position: absolute;
+          list-style: none;
+           
+          @include mobile{
+         
+           
+          }
+          div {
+            width: 90px;
+            height: 90px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include mobile{
+              width: 70px;
+              height: 70px;
+            }
+            img {
+              width: 60%;
+              height: 60%;
+            }
+          }
+        }
+
+        @include mobile{
+          margin: 9rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @for $i from 0 through 5{
+            li:nth-child(#{$i+1}){
+              transform: translate(
+                5rem * cos(60deg * $i),
+                5rem * sin(59deg * $i)
+              );
+            }
+          }
+        }
+
+        @include tablet{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 13rem;
+        }
+      }
+    }
+  }
+}
