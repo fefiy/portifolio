@@ -33,7 +33,7 @@ import tictactoe from "../assets/tictactoe.jpg";
 import waterMng from "../assets/waterMng.png";
 import realstate from "../assets/realstate.png";
 import water_user from "../assets/water-user.png"
-
+import music from "../assets/music.png"
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
 import asus from "../assets/asus.png";
@@ -82,5 +82,6 @@ export default {
   realstate,
   waterMng,
   water_user,
-  reactNative
+  reactNative,
+  music
 };

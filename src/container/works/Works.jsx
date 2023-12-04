@@ -17,34 +17,25 @@ const Works = () => {
       imgUrl: images.tictactoe,
       projectLink: "https://fefiy.github.io/tic-tac-toe-with-reactjs/",
       codeLink: "https://github.com/fefiy/tic-tac-toe-with-reactjs",
-      tags: ["Web App" , "ReactJS"],
+      tags: ["Web App" , "ReactJS", ],
     },
-    {
-      title: "Water amnagement admin",
-      description: `Admins have access to a dedicated dashboard to 
-      manage user accounts, generate bills, and oversee consumption statistics`,
-      imgUrl: images.waterMng,
-      projectLink: "https://water-managment-sytem-admin.onrender.com/",
-      codeLink: "https://github.com/fefiy/Water-billing-system-using-reactjs-mysql-nodejs-Iotbased",
-      tags: ["Web App"],
-    },
+    
     {
       title: "Real State App",
       description: "This all-inclusive real estate app streamlines the property search and management experience. Users can easily list their properties, save favorites, and schedule visits",
       imgUrl: images.realstate,
       projectLink: "https://real-state-react-pi.vercel.app/",
-      codeLink: "https://www.framer.com/motion/transition/",
-      tags: ["Web App"],
+      codeLink: "https://github.com/fefiy/Real-state-Mern",
+      tags: ["Web App","ReactJS" ],
     },
     {
-      title: "water managment user",
-      description: `. Users can log in to their accounts, view 
-      real-time consumption data, and pay bills securely through integrated Chapa 
-      payment processing.`,
-      imgUrl: images.water_user,
-      projectLink: "https://water-managment-system-user.onrender.com/",
-      codeLink: "https://github.com/fefiy/Water-billing-system-using-reactjs-mysql-nodejs-Iotbased",
-      tags: ["Web App"],
+      title: "Music Website",
+      
+      description: `This music website features user and admin roles. Users enjoy personalized playlists, favorite song marking, and a dedicated music player. Admins manage songs, albums, and artists, ensuring content control and organization,`,
+      imgUrl: images.music,
+      projectLink: "https://music-website-typescript-react.vercel.app/",
+      codeLink: "https://github.com/fefiy/music-website-typescript-react",
+      tags: ["Web App",  "React-TypeScript"],
     },
   ];
 
@@ -74,7 +65,7 @@ const Works = () => {
       </h2>
 
       <div className="app__work-filter">
-        {["Web App", "Mobile App", , "All"].map((item, index) => (
+        {["Web App", "React-TypeScript", "All"].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
