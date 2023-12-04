@@ -31,7 +31,7 @@ const Works = () => {
     {
       title: "Music Website",
       
-      description: `This music website features user and admin roles. Users enjoy personalized playlists, favorite song marking, and a dedicated music player. Admins manage songs, albums, and artists, ensuring content control and organization,`,
+      description: `Admin user name and pasword are fozi and fefu123 respectivly, This music website features user and admin roles. Users enjoy personalized playlists, favorite song marking, and a dedicated music player. Admins manage songs, albums, and artists, ensuring content control and organization,`,
       imgUrl: images.music,
       projectLink: "https://music-website-typescript-react.vercel.app/",
       codeLink: "https://github.com/fefiy/music-website-typescript-react",
@@ -65,7 +65,7 @@ const Works = () => {
       </h2>
 
       <div className="app__work-filter">
-        {["Web App", "React-TypeScript", "All"].map((item, index) => (
+        {["Web App","ReactJS", "React-TypeScript", "All"].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
