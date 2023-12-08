@@ -24,7 +24,7 @@ const Works = () => {
       title: "Real State App",
       description: "This all-inclusive real estate app streamlines the property search and management experience. Users can easily list their properties, save favorites, and schedule visits",
       imgUrl: images.realstate,
-      projectLink: "https://real-state-react-pi.vercel.app/",
+      projectLink: "https://real-state-mern.vercel.app/",
       codeLink: "https://github.com/fefiy/Real-state-Mern",
       tags: ["Web App","ReactJS" ],
     },
