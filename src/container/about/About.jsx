@@ -9,12 +9,12 @@ const abouts = [
   {
     title:"FrontEnd developer",
     imgUrl:images.front,
-    description: "With one year of experience in front-end development, I'm proficient in React, Tailwind CSS, Material-UI, and Redux for state management. "
+    description: "With Two year of experience in front-end development, I'm proficient in React, Tailwind CSS, Material-UI, and Redux for state management. "
   },
   {
     title:"Backend developer",
     imgUrl:images.back,
-    description: "With one year of experience, I focus on back-end development using Node.js, MySQL, MongoDB, and PostgreSQL. create secure applications using JSON Web Tokens (JWT) for authentication and authorization"
+    description: "With Two year of experience, I focus on back-end development using Node.js, MySQL, MongoDB, and PostgreSQL. create secure applications using JSON Web Tokens (JWT) for authentication and authorization"
   },
   {
     title:"mobile app developer",
