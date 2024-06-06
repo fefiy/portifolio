@@ -23,8 +23,6 @@ const abouts = [
   },
 ]
 const About = () => {
-
-
   return (
     <>
       <h2 className="head-text">Things <span>I am </span> <br />Good  <span>At</span></h2>

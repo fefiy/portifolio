@@ -53,7 +53,7 @@ const Header = () => {
         {[
           images.redux,
           images.node,
-          images.sass,
+          images.tailwind,
           images.react,
           images.javascript,
           images.html,

@@ -10,13 +10,23 @@ import { images } from "../../constants";
 const Skills = () => {
   const experiences = [
     { 
-      year: 2022,
+      year: "Oct 2022 - Feb 2023 | NTERNSHIP  ",
       works:[
         {
-        name:"Full stack developer",
+        name:"FULL STACK DEVELOPER (ASP.NET MVC)",
         company:"Africom Technology Plc"
-      }
+      },
+     
     ]
+    },
+    {
+      year:"April 2024  - Present | CONTRACTUAL ",
+      works:[
+        {
+          name: "WEB APPLICATION DEVELOPER (MERN)",
+          company:"Pawe Radiator Company"
+        }
+      ]
     }
     
   ]
@@ -32,6 +42,10 @@ const Skills = () => {
     {
       icon: images.sass,
       name: "Sass",
+    },
+    {
+      icon: images.tailwind,
+      name: "Tailwind",
     },
     {
       icon: images.html,
@@ -56,6 +70,10 @@ const Skills = () => {
     {
       icon: images.python,
       name: "Python",
+    },
+    {
+      icon: images.mongodb,
+      name: "MongoDb",
     },
   ];
   
@@ -98,7 +116,7 @@ const Skills = () => {
                       data-for={work.name}
                       key={work.name}>
                       <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
+                      <p className="p-text" style={{fontSize:"18px"}}>{work.company}</p>
                     </motion.div>
                   </>
                 ))}
