@@ -14,7 +14,7 @@ const Works = () => {
     {
       title: "Inventory and Selling Web App",
       imgUrl: images.inv,
-      projectLink: "https://sample-inventory.vercel.app/",
+      projectLink: "https://sample-fs-inventory.vercel.app/",
       tags: ["Web App", "React-TypeScript"],
       stacks: ["React", "React-TypeScript"],
       description:
